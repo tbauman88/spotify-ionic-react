@@ -1,0 +1,57 @@
+ion-toolbar {
+  --align-items: flex-start;
+  &::part(.toolbar-container) {
+    align-items: flex-start;
+  }
+}
+
+ion-text {
+  font-size: 0.75rem;
+
+  span:not(:first-child):before {
+    content: '•';
+    margin: 0 4px;
+  }
+}
+
+ion-avatar {
+  width: 24px;
+  height: 24px;
+}
+
+ion-avatar + ion-label {
+  margin: 0 4px;
+  font-size: 0.75rem;
+}
+
+.icons {
+  ion-icon {
+    margin: 0 6px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      height: 48px;
+      width: 48px;
+      margin-right: 0;
+    }
+
+    &:not(:last-child) {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
+.track-item {
+  h3 {
+    margin: 0;
+    font-size: 0.875rem;
+  }
+  p {
+    font-size: 0.625rem;
+    margin-top: 4px;
+  }
+}

@@ -1,0 +1,28 @@
+ion-footer {
+  background-color: var(--ion-color-light);
+  border-radius: 4px;
+
+  .progress {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+  }
+
+  ion-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  img {
+    border-radius: 4px;
+    flex-basis: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  p {
+    font-family: 'Spotify';
+    font-size: 12px;
+    margin: 0 auto 0 8px;
+  }
+}

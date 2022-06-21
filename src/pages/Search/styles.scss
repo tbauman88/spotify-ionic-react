@@ -1,0 +1,60 @@
+$breakpoint-md: 768px;
+
+:root {
+  --albumImageSm: 60px;
+  --albumImageLg: 80px;
+}
+
+.ion-page.search {
+  ion-title {
+    position: initial;
+    padding: 0 12px;
+    text-align: left;
+    font-size: 22px;
+  }
+}
+
+.searchbar {
+  --border-radius: 4px;
+}
+
+ion-header {
+  &.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    .searchbar {
+      margin-top: 0.75rem;
+    }
+  }
+}
+
+ion-content {
+  font-family: 'Spotify';
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.grid {
+  padding-top: 0.5rem;
+
+  ion-col {
+    @media (max-width: $breakpoint-md) {
+      &:nth-of-type(odd) {
+        padding-left: 0;
+      }
+
+      &:nth-of-type(even) {
+        padding-right: 0;
+      }
+    }
+
+    img {
+      border-radius: 0.25rem;
+    }
+  }
+}
